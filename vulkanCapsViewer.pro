@@ -51,6 +51,8 @@ android {
     DEFINES += VK_NO_PROTOTYPES
     DEFINES += VK_USE_PLATFORM_ANDROID_KHR
     ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+    QMAKE_RESOURCE_FLAGS += --no-zstd
+    DEFINES += QT_ANDROID_DISABLE_ACCESSIBILITY
 
     DISTFILES += \
         android/AndroidManifest.xml \
